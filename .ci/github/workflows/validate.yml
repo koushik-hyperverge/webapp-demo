@@ -1,0 +1,33 @@
+name: validate
+
+# Thin GitHub wrapper. Logic lives in .ci/pipeline.sh which is platform-neutral.
+# To migrate to GitLab, add .gitlab-ci.yml that calls the same script.
+
+on:
+  pull_request: {}
+  push:
+    branches: [main]
+
+# Default-deny permissions (PoLP); each job opts-in.
+permissions: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Run pipeline
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .ci/pipeline.sh

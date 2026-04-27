@@ -1,0 +1,21 @@
+{
+  "$comment": "Files in this list are SCAFFOLD-MANAGED. Do not edit them in the webapp; propose changes via @koushik-hyperverge/* package PRs upstream. Enforced by scripts/check-managed-files.mjs in CI.",
+  "managedPaths": [
+    ".ci/**",
+    ".scaffold/**",
+    ".platform.yml",
+    "renovate.json",
+    "CODEOWNERS",
+    ".npmrc",
+    "tailwind.config.ts",
+    "postcss.config.js",
+    "scripts/check-managed-files.mjs"
+  ],
+  "appOwnedPaths": [
+    "src/**",
+    "public/**",
+    "index.html",
+    "package.json",
+    "README.md"
+  ]
+}

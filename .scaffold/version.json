@@ -1,0 +1,8 @@
+{
+  "createdFrom": "@koushik-hyperverge/create-scaffold-webapp@1.0.0",
+  "createdAt": "auto-populated-on-provision",
+  "lockedPackages": {
+    "@koushik-hyperverge/scaffold-ui": "^1.0.0",
+    "@koushik-hyperverge/scaffold-tsconfig": "^1.0.0"
+  }
+}

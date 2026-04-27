@@ -1,0 +1,11 @@
+name: webapp-demo
+owner: platform-team
+account: koushik-hyperverge
+created_from: "@koushik-hyperverge/create-scaffold-webapp@1.0.0"
+git_provider: github
+branching: trunk
+policies:
+  branch_protection: standard
+  codeowners: platform-team
+deploy_target:
+  type: github-pages   # demo only; production uses S3 + CloudFront via OIDC

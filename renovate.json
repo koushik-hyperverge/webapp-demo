@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "labels": ["scaffold-upgrade"],
+  "schedule": ["before 9am on monday"],
+  "prHourlyLimit": 4,
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^@koushik-hyperverge/"],
+      "groupName": "scaffold packages",
+      "automerge": true,
+      "automergeType": "pr",
+      "matchUpdateTypes": ["patch", "minor"]
+    },
+    {
+      "matchPackagePatterns": ["^@koushik-hyperverge/"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["scaffold-upgrade", "needs-review"]
+    }
+  ],
+  "vulnerabilityAlerts": { "labels": ["security"], "automerge": true }
+}
