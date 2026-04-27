@@ -7,6 +7,7 @@
   "engines": {
     "node": ">=20"
   },
+  "packageManager": "pnpm@10.29.3",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
@@ -17,7 +18,7 @@
     "scaffold:check": "node scripts/check-managed-files.mjs"
   },
   "dependencies": {
-    "@koushik-hyperverge/scaffold-ui": "^1.0.0",
+    "@koushik-hyperverge/scaffold-ui": "^1.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
