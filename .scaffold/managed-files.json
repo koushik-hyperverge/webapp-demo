@@ -2,6 +2,7 @@
   "$comment": "Files in this list are SCAFFOLD-MANAGED. Do not edit them in the webapp; propose changes via @koushik-hyperverge/* package PRs upstream. Enforced by scripts/check-managed-files.mjs in CI.",
   "managedPaths": [
     ".ci/**",
+    ".github/workflows/**",
     ".scaffold/**",
     ".platform.yml",
     "renovate.json",

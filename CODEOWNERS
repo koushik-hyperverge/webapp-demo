@@ -9,6 +9,7 @@
 
 # Scaffold-managed (platform team approval required)
 /.ci/**                 @koushik-hyperverge
+/.github/workflows/**   @koushik-hyperverge
 /.scaffold/**           @koushik-hyperverge
 /.platform.yml          @koushik-hyperverge
 /renovate.json          @koushik-hyperverge
